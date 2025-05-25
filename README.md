@@ -42,3 +42,13 @@ This app allows you to **drag and drop an image of a car**, and it will classify
 
 ---
 
+## YOLOv5 Integration in Car Damage Detection System
+
+To enhance the functionality of the car damage detection system,YOLOv5 is integrated to validate whether the uploaded image actually contains a car. This pre-validation step ensures that only relevant images are processed further for damage classification.
+
+### Why YOLOv5?
+
+* **Car Presence Detection**: YOLOv5 is used to detect whether a car is present in the uploaded image. This is important to filter out irrelevant or incorrect uploads.
+* **Robust Error Handling**: If YOLOv5 makes a wrong prediction (e.g., doesn't detect a car in a valid image or detects incorrectly), the system flags the case for manual review or prompts the user to upload the image again.
+* **Multiple Cars Handling**: In scenarios where multiple cars are detected, the one occupying the largest portion of the image is selected for further processing. This ensures that the most prominent car is considered for damage detection.
+Code for YOLO integration is present here: 
