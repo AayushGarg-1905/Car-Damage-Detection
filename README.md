@@ -51,4 +51,4 @@ To enhance the functionality of the car damage detection system,YOLOv5 is integr
 * **Car Presence Detection**: YOLOv5 is used to detect whether a car is present in the uploaded image. This is important to filter out irrelevant or incorrect uploads.
 * **Robust Error Handling**: If YOLOv5 makes a wrong prediction (e.g., doesn't detect a car in a valid image or detects incorrectly), the system flags the case for manual review or prompts the user to upload the image again.
 * **Multiple Cars Handling**: In scenarios where multiple cars are detected, the one occupying the largest portion of the image is selected for further processing. This ensures that the most prominent car is considered for damage detection.<br/>
-Code for YOLO integration is present here:https://github.com/AayushGarg-1905/Car-Damage-Detection/blob/feature/yolo-integration
+Code for YOLO integration is here: https://github.com/AayushGarg-1905/Car-Damage-Detection/tree/feature/yolo-integration/streamlit_app
