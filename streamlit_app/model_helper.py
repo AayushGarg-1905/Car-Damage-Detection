@@ -40,7 +40,7 @@ def predict(image_path):
 
     if trained_model is None:
         trained_model = CarClassifierCNNResNetHyperParameterTuning()
-        model_path = os.path.join("model", "saved_model.pth")
+        model_path = "model/saved_model.pth"
         trained_model.load_state_dict(torch.load(model_path))
         trained_model.eval()
 
