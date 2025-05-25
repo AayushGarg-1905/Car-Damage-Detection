@@ -32,7 +32,7 @@ if uploaded_file:
     prediction_before_yolo = predict(image_path)
 
     # model = torch.hub.load("ultralytics/yolov5", "yolov5s", pretrained=True)
-    model = torch.hub.load("yolov5", "yolov5s", source="local", pretrained=True)
+    model = torch.hub.load("streamlit_app/yolov5", "yolov5s", source="local", pretrained=True)
     results = model(image_path)
     st.image(results.render()[0], caption="YOLOv5 Detection Result", use_container_width=True)
 
